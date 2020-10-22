@@ -84,7 +84,7 @@ class Request
         }
 
         if ($data && in_array($method, ['POST', 'PUT'])) {
-            curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+            curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($data));
         }
 
         curl_setopt($curl, CURLOPT_URL, $url);
