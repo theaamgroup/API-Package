@@ -60,6 +60,16 @@ class Validate extends Auth
     }
 
     /**
+     * Sets the choice for a facet.
+     * @param string $facet_name The name of the facet/choice (e.g. EngineBaseID)
+     * @param int $choice_id The ID of the choice option
+     */
+    public function setFacet(string $facet_name, int $choice_id): void
+    {
+        $this->data[$facet_name] = $choice_id;
+    }
+
+    /**
      * Fetches the validation result for a given part and vehicle.
      * @return array Response from the Validate endpoint.
      */
