@@ -42,6 +42,15 @@ class Product extends Auth
     }
 
     /**
+     * Sets whether products for only program brands should be returned.
+     * @param bool $program_only If true, only program brands will be returned
+     */
+    public function setProgramOnly(bool $program_only): void
+    {
+        $this->data['program_only'] = (int) $program_only;
+    }
+
+    /**
      * Fetches information about a product.
      * @return array Response from the Product endpoint.
      */
