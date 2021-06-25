@@ -19,9 +19,9 @@ class Data extends Auth
      * @param string $aaia The AAIA brand code
      * @param string $part_number The part number
      */
-    public function addPart(string $aaia, string $part_number): void
+    public function addPart(string $aaia, string $part_number, bool $clear_cache = false): void
     {
-        $this->data['parts'][] = ['aaia' => $aaia, 'part_number' => $part_number];
+        $this->data['parts'][] = ['aaia' => $aaia, 'part_number' => $part_number, 'clear_cache' => $clear_cache];
     }
 
     /**
