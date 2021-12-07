@@ -23,3 +23,8 @@ print_r($distributor->getDistributor());
 $distributor = new Distributor($auth);
 $distributor->setCode('MWW');
 print_r($distributor->getWarehouses());
+
+// Fetch brands carried by warehouse(s)
+$distributor = new Distributor($auth);
+$distributor->setCode('APA,TS1');
+print_r($distributor->getBrands());
