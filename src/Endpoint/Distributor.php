@@ -50,4 +50,14 @@ class Distributor extends Auth
         $req = new Request();
         return $req->call('GET', 'distributor/warehouses', array_filter($this->data), $this->getAuthHeader());
     }
+
+    /**
+     * Fetches a list of brands carried by the warehouse.
+     * @return array Response from the Distributor warehouse brands endpoint.
+     */
+    public function getBrands(): array
+    {
+        $req = new Request();
+        return $req->call('GET', 'distributor/brands', array_filter($this->data), $this->getAuthHeader());
+    }
 }
