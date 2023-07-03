@@ -65,7 +65,7 @@ class Store extends Auth
     public function getStores(): array
     {
         $req = new Request();
-        return $req->call('GET', 'store', array_filter($this->data), $this->getAuthHeader());
+        return $req->call('GET', 'store', $this->data, $this->getAuthHeader());
     }
 
     /**
@@ -75,6 +75,6 @@ class Store extends Auth
     public function getProRebateStores(): array
     {
         $req = new Request();
-        return $req->call('GET', 'store/pro_rebate', array_filter($this->data), $this->getAuthHeader());
+        return $req->call('GET', 'store/pro_rebate', $this->data, $this->getAuthHeader());
     }
 }
