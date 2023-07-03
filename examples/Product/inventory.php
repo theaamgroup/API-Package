@@ -3,9 +3,9 @@
 use AAM\Api\Endpoint\Auth;
 use AAM\Api\Endpoint\Product\Inventory;
 
-require_once __DIR__ . '../../../src/Request.php';
-require_once __DIR__ . '../../../src/endpoint/Auth.php';
-require_once __DIR__ . '../../../src/endpoint/Product/Inventory.php';
+require_once __DIR__ . '/../../src/Request.php';
+require_once __DIR__ . '/../../src/Endpoint/Auth.php';
+require_once __DIR__ . '/../../src/Endpoint/Product/Inventory.php';
 
 // Fetch inventory
 $auth = new Auth('{API_KEY}');

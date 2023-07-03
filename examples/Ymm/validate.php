@@ -3,9 +3,9 @@
 use AAM\Api\Endpoint\Auth;
 use AAM\Api\Endpoint\Ymm\Validate;
 
-require_once __DIR__ . '../../../src/Request.php';
-require_once __DIR__ . '../../../src/endpoint/Auth.php';
-require_once __DIR__ . '../../../src/endpoint/Ymm/Validate.php';
+require_once __DIR__ . '/../../src/Request.php';
+require_once __DIR__ . '/../../src/Endpoint/Auth.php';
+require_once __DIR__ . '/../../src/Endpoint/Ymm/Validate.php';
 
 // Fetch list of models
 $auth = new Auth('{API_KEY}');

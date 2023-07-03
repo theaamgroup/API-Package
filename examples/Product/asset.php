@@ -3,9 +3,9 @@
 use AAM\Api\Endpoint\Auth;
 use AAM\Api\Endpoint\Product\Asset;
 
-require_once __DIR__ . '../../../src/Request.php';
-require_once __DIR__ . '../../../src/endpoint/Auth.php';
-require_once __DIR__ . '../../../src/endpoint/Product/Asset.php';
+require_once __DIR__ . '/../../src/Request.php';
+require_once __DIR__ . '/../../src/Endpoint/Auth.php';
+require_once __DIR__ . '/../../src/Endpoint/Product/Asset.php';
 
 // Fetch list of assets
 $auth = new Auth('{API_KEY}');

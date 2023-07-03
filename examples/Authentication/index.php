@@ -4,10 +4,10 @@ use AAM\Api\Endpoint\Auth;
 use AAM\Api\Endpoint\Distributor;
 use AAM\Api\Endpoint\Manufacturer;
 
-require_once __DIR__ . '../../../src/Request.php';
-require_once __DIR__ . '../../../src/endpoint/Auth.php';
-require_once __DIR__ . '../../../src/endpoint/Distributor.php';
-require_once __DIR__ . '../../../src/endpoint/Manufacturer.php';
+require_once __DIR__ . '/../../src/Request.php';
+require_once __DIR__ . '/../../src/Endpoint/Auth.php';
+require_once __DIR__ . '/../../src/Endpoint/Distributor.php';
+require_once __DIR__ . '/../../src/Endpoint/Manufacturer.php';
 
 // There are several ways to authenticate you API calls.
 // Each method below yields the same result.

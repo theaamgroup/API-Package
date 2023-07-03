@@ -3,9 +3,9 @@
 use AAM\Api\Endpoint\Auth;
 use AAM\Api\Endpoint\Distributor;
 
-require_once __DIR__ . '../../../src/Request.php';
-require_once __DIR__ . '../../../src/endpoint/Auth.php';
-require_once __DIR__ . '../../../src/endpoint/Distributor.php';
+require_once __DIR__ . '/../../src/Request.php';
+require_once __DIR__ . '/../../src/Endpoint/Auth.php';
+require_once __DIR__ . '/../../src/Endpoint/Distributor.php';
 
 $auth = new Auth('{API_KEY}');
 

@@ -2,8 +2,8 @@
 
 use AAM\Api\Endpoint\Prop65;
 
-require_once __DIR__ . '../../../src/Request.php';
-require_once __DIR__ . '../../../src/endpoint/Prop65.php';
+require_once __DIR__ . '/../../src/Request.php';
+require_once __DIR__ . '/../../src/Endpoint/Prop65.php';
 
 // Fetch Prop 65 message for one part. Default response format is HTML
 $prop65 = new Prop65();
