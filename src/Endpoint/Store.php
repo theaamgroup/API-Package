@@ -59,6 +59,15 @@ class Store extends Auth
     }
 
     /**
+     * Sets the id for the request.
+     * @param int $id The id
+     */
+    public function setId(int $id): void
+    {
+        $this->data['id'] = $id;
+    }
+
+    /**
      * Fetches the list of stores.
      * @return array Response from the Store endpoint.
      */
