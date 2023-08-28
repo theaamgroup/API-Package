@@ -59,6 +59,15 @@ class Store extends Auth
     }
 
     /**
+     * Sets the business types to exclude for the request.
+     * @param array $types The list of business types
+     */
+    public function excludeTypes(array $types): void
+    {
+        $this->data['exclude_types'] = implode(',', $types);
+    }
+
+    /**
      * Sets the id for the request.
      * @param int $id The id
      */

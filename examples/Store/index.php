@@ -13,5 +13,6 @@ $store->setLatitude(36.3152229);
 $store->setLongitude(-82.3519357);
 $store->setDistance(25);
 $store->setStart(0);
-$store->setLimit(1);
+$store->setLimit(10);
+$store->excludeTypes(['Dealership']);
 print_r($store->getStores());
