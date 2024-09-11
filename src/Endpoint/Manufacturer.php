@@ -40,4 +40,20 @@ class Manufacturer extends Auth
         $req = new Request();
         return $req->call('GET', 'manufacturer', array_filter($this->data), $this->getAuthHeader());
     }
+
+    /**
+     * Fetches the manufacturers with recent inventory records.
+     * @param string $date The cutoff date to use for inventory records
+     * @return array Response from the Manufacturer endpoint.
+     */
+    public function getManufacturersWithRecentInventory(string $date = ''): array
+    {
+        if (!$date) {
+            $date = date('Y-m-d', strtotime('-30 days'));
+        }
+
+        $this->data['date'] = $date;
+        $req = new Request();
+        return $req->call('GET', 'manufacturer/recentInventory', array_filter($this->data), $this->getAuthHeader());
+    }
 }
