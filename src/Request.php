@@ -106,7 +106,7 @@ class Request
         }
 
         $this->status_code = (int) curl_getinfo($curl, CURLINFO_HTTP_CODE);
-        curl_close($curl);
+        unset($curl);
 
         $this->response = [
             'status' => $this->status_code,
